@@ -1,2 +1,0 @@
-# Digi_menetelmat
-Digitaalisen kielentutkimuksen menetelmat
