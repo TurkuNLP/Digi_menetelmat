@@ -1,8 +1,8 @@
 # Digi_menetelmat
 
-Johdatus digitaalisiin ihmistieteisiin -kurssin työpaja "Digitaaliset ihmistieteet kielentutkimuksessa: tekstinlouhinta"
+Johdatus digitaalisiin ihmistieteisiin -kurssin työpaja "Digitaaliset ihmistieteet kielentutkimuksessa: tekstinlouhinta".
 
-Mistä ja miten sosiaalisessa mediassa keskustellaan? Mistä puhutaan, kun keskustellaan vaikkapa jalkapallosta? Tai mitä puheenaiheita liitetään politiikkaan? Mihin kaikkeen uskonto liitetään? Entä miten puheenaiheet kehittyvät vuosien saatossa?
+Mistä ja miten sosiaalisessa mediassa keskustellaan? Mistä puhutaan, kun keskustellaan vaikkapa jalkapallosta? Tai mitä puheenaiheita liitetään politiikkaan? Miten köyhyydestä keskustellaan? Entä miten puheenaiheet kehittyvät vuosien saatossa? Mitä käsitteitä sossupummeihin liitettiin vuonna 2002, ja miten nämä keskustelut ovat muuttuneet 2010-luvulle tultaessa?
 
 Työpajan tavoitteena on tutustua tekstinlouhintaan hakemalla vastauksia näihin kysymyksiin. Opiskelijat pääsevät itse koittamaan datan analyysiä hands-on -periaatteella. Aineistona käytetään Suomi24-keskustelufoorumia. Etukäteistietoja ohjelmoinnista ei tarvita.
 
