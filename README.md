@@ -6,6 +6,6 @@ Mistä ja miten sosiaalisessa mediassa keskustellaan? Mistä puhutaan, kun kesku
 
 Työpajan tavoitteena on tutustua tekstinlouhintaan hakemalla vastauksia näihin kysymyksiin. Opiskelijat pääsevät itse koittamaan datan analyysiä hands-on -periaatteella. Aineistona käytetään Suomi24-keskustelufoorumia. Etukäteistietoja ohjelmoinnista ei tarvita.
 
-Työpaja on kaksipäiväinen. Ensimmäinen kerta pidetään perjantaina 23.3. klo 10-15 Sammio-tietokoneluokassa Teutorilla. Toisen kerran ajankohta sovitaan kurssilla.
+Työpaja on kaksipäiväinen. Ensimmäinen kerta pidetään perjantaina 5.4. klo 10-15. Toisen kerran ajankohta sovitaan kurssilla.
 
-Ilmoittautuminen osoitteeseen veronika.laippala@utu.fi viimeistään 28.2. Ilmoita myös, jos olisit kiinnostunut, mutta ajankohta ei sovi.
+Ilmoittautuminen osoitteeseen veronika.laippala@utu.fi viimeistään 16.3. Ilmoita myös, jos olisit kiinnostunut, mutta ajankohta ei sovi.
