@@ -7,7 +7,7 @@ import gzip
 
 search_words = [u'köyhä', u'rutiköyhä', u"ruti#köyhä", u"rahaton", u"persaukinen", u"pers#aukinen", u"vähävarainen", u"vähä#varainen", u"perseaukinen", u"perse#aukinen", u"tyhjätasku", u"tyhjä#tasku", u"pienituloinen", u"pieni#tuloinen",  u"sossupummi", u"sossu#pummi", u"saita", u"sosiaalipummi", u"sosiaali#pummi", u"varaton", u"eläkeläinen", u"pienipalkkainen", u"pieni#palkkainen"]
 
-pos_not_to_keep = []  # näitä voi vaihdella, jos haluaa
+pos_not_to_keep = [u"AUX"]  # näitä voi vaihdella, jos haluaa
 
 out8 = codecs.getwriter(u"utf-8")(sys.stdout)
 
