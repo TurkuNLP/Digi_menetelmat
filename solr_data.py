@@ -1,3 +1,4 @@
+# encoding = utf-8"
 import requests, json, gzip, pickle, os
 import logging
 logging.basicConfig(level=logging.INFO)
@@ -13,9 +14,9 @@ class DataGrabber:
 		self.user, self.passwd = "solr", "comhis"
 		self.core = core
 		self.address=address
-		self.threads_per_query = 20 ## defaults
+		self.threads_per_query = 10000 ## defaults
 		self.threads_per_file = 10000
-		self.comments_per_query = 100
+		self.comments_per_query = 10000
 		self.comments_per_file = 10000 ##
 
 	def grab_threads(self):
@@ -36,7 +37,7 @@ class DataGrabber:
 		logging.info("Downloading all comments...")
 		comments = {}
 		file_c = 0
-		for i in range(0, 500, self.comments_per_query):
+		for i in range(0, 10000, self.comments_per_query):
 			logging.info("Loading comments {} to {}".format(i, i+self.comments_per_query))
 			query = self.make_id_query()
 			print(query)
@@ -57,7 +58,7 @@ class DataGrabber:
 #		for word in self.query_words:
 #			q.append("{}:{}".format(self.query_field, word))
 #		return " OR ".join(q)
-		return "-lemma:turkulainen"# *:*"#"-lemma:köyhä -lemma:rutiköyhä -lemma:ruti#köyhä -lemma:rahaton -lemma:persaukinen -lemma:pers#aukinen -lemma:vähävarainen -lemma:vähä#varainen -lemma:perseaukinen -lemma:perse#aukinen -lemma:tyhjätasku -lemma:tyhjä#tasku -lemma:pienituloinen -lemma:pieni#tuloinen  -lemma:sossupummi -lemma:sossu#pummi -lemma:saita -lemma:sosiaalipummi -lemma:sosiaali#pummi -lemma:varaton -lemma:eläkeläinen -lemma:pienipalkkainen -lemma:pieni#palkkainen"
+		return "+lemma:turkulainen"# *:*"#"-lemma:köyhä -lemma:rutiköyhä -lemma:ruti#köyhä -lemma:rahaton -lemma:persaukinen -lemma:pers#aukinen -lemma:vähävarainen -lemma:vähä#varainen -lemma:perseaukinen -lemma:perse#aukinen -lemma:tyhjätasku -lemma:tyhjä#tasku -lemma:pienituloinen -lemma:pieni#tuloinen  -lemma:sossupummi -lemma:sossu#pummi -lemma:saita -lemma:sosiaalipummi -lemma:sosiaali#pummi -lemma:varaton -lemma:eläkeläinen -lemma:pienipalkkainen -lemma:pieni#palkkainen"
         
 	def process_id_response(self, response):
 		threads = set()
@@ -79,7 +80,7 @@ class DataGrabber:
 		threads = {}
 		file_c = 0
 		counts = [0]
-		max = 33716
+		max = 1000
 		for thread_c, thread_id in enumerate(ids):
 			logging.info("Thread: {} / {}  max: {}".format(thread_c, len(ids), max(counts)))
 			params = {"q": "thread:{}".format(thread_id), "wt":"json", "rows": 10000}
@@ -108,7 +109,7 @@ if __name__ == "__main__":
 	q_info = ["lemma", ["turkulainen"]]#["lemma", ["köyhä", "rutiköyhä", "ruti#köyhä", "rahaton", "persaukinen", "pers#aukinen", "vähävarainen", "vähä#varainen", "perseaukinen", "perse#aukinen", "tyhjätasku", "tyhjä#tasku", "pienituloinen", "pieni#tuloinen",  "sossupummi", "sossu#pummi", "saita", "sosiaalipummi", "sosiaali#pummi", "varaton", "eläkeläinen", "pienipalkkainen", "pieni#palkkainen"]]
 	address = "http://evex.utu.fi/solr"
 	core = "suomi24POS"
-	grabber = DataGrabber(query_info=q_info, output_folder="comments_datapaja_verrokki", address=address, core=core)
+	grabber = DataGrabber(query_info=q_info, output_folder="comments_datapaja_turkulainen", address=address, core=core)
 	grabber.grab_comments()
 		
 			

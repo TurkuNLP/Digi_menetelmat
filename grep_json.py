@@ -3,7 +3,7 @@ import json, gzip, sys, os
 
 #input_folder = "/home/avjves/s24/comments_new"
 #input_folder= "no_koyha_words"
-input_folder= "comments_datapaja_verrokki"
+input_folder= "comments_datapaja_turkulainen"
 
 files = os.listdir(input_folder)
 

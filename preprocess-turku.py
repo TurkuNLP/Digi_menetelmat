@@ -26,8 +26,8 @@ def read_comment(corpus_l, file_n):
       else:
           line=line.split("\t")
           try:
-              if  line[1].strip() not in search_words:
-                  if line[2].strip() not in pos_not_to_keep:
+              #if  line[1].strip() not in search_words:
+              if line[2].strip() not in pos_not_to_keep:
                       comment.append(line[1].strip()) # tähän voi 1:sen tilalle laittaa 0:n, jos haluaa koittaa, mitä lemman vaihtaminen juoksevaksi sanaksi vaikuttaa
           except: continue 
           
